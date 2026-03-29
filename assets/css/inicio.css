@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+:root {
+    --cor-fundo-primario: #a8d0e6;
+    --cor-card-azul: #90bcd4;
+    --cor-texto: #333333;          
+    --cor-btn-entrar: #56B4E9;     
+    --cor-btn-criar: #1EB742;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo-primario);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-boas-vindas {
+    background-color: var(--cor-card-azul);
+    padding: 4rem 4rem;
+    border-radius: 24px;
+    text-align: center;
+    width: 90%;
+    max-width: 550px;
+    box-shadow: 0 8px 24px  rgba(0, 0, 0, 0.05);
+}
+
+.logo-educaja {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--cor-texto);
+}
+
+.mensagem-boas-vindas {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #555555;
+    line-height: 1.6;
+}
+
+.grupo-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+}
+
+.btn {
+    display: block; 
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 12px;
+    background-color: transparent; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 1.5rem;
+}
+
+.btn:last-child {
+    margin-bottom: 0;
+}
+
+.btn-entrar {
+    border: 2px  solid var(--cor-texto);
+    color: var(--cor-texto);
+}
+
+.btn-criar {
+    border: 2px solid var(--cor-texto);
+    color: var(--car-texto);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0  4px 12px rgba(0,0,0,0.1);
+}
+
+.btn:focus {
+    outline: 3px solid var(--cor-texto);
+    outline-offset: 2px;
+}
