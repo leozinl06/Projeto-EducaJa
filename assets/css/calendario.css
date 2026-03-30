@@ -1,0 +1,82 @@
+.flatpickr-calendar {
+    background-color: var(--cor-card-azul) !important;
+    border: 2px solid var(--cor-texto) !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+    border-radius: 12px !important;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.flatpickr-months .flatpickr-month,
+.flatpickr-months .flatpickr-prev-month, 
+.flatpickr-months .flatpickr-next-month,
+.flatpickr-current-month .flatpickr-monthDropdown-months,
+.flatpickr-current-month input.cur-year {
+    color: var(--cor-texto) !important;
+    fill: var(--cor-texto) !important;
+}
+
+span.flatpickr-weekday {
+    color: var(--cor-texto) !important;
+    font-weight: 800 !important;
+}
+
+.flatpickr-day {
+    color: var(--cor-texto) !important;
+    border-radius: 8px !important;
+}
+
+.flatpickr-day:hover, .flatpickr-day:focus {
+    background-color: var(--cor-fundo-primario) !important;
+    border-color: var(--cor-fundo-primario) !important;
+}
+
+.flatpickr-day.selected {
+    background-color: var(--cor-texto) !important;
+    border-color: var(--cor-texto) !important;
+    color: var(--cor-fundo-primario) !important;
+    font-weight: bold !important;
+}
+
+.flatpickr-calendar .flatpickr-months {
+    padding-top: 12px !important;
+    height: 50px !important;
+}
+
+.flatpickr-calendar .flatpickr-months .flatpickr-month .flatpickr-current-month .flatpickr-monthDropdown-months {
+    background-color: var(--cor-card-azul) !important;
+    color: var(--cor-texto) !important;
+    border: 2px solid var(--cor-texto) !important;
+    border-radius: 6px !important;
+    font-size: 1rem !important;
+    font-family: 'Nunito', sans-serif !important;
+    padding: 2px 5px !important;
+    cursor: pointer;
+    appearance: auto !important;
+    padding-top: -5px !important;
+}
+
+.flatpickr-calendar .flatpickr-months .flatpickr-month .flatpickr-current-month .flatpickr-monthDropdown-months option {
+    background-color: var(--cor-fundo-primario) !important;
+    color: var(--cor-texto) !important;
+}
+
+.flatpickr-calendar .flatpickr-months .flatpickr-month .flatpickr-current-month input.cur-year {
+    background-color: var(--cor-card-azul) !important;
+    color: var(--cor-texto) !important;
+    border: 2px solid var(--cor-texto) !important;
+    border-radius: 6px !important;
+    font-size: 1rem !important;
+    font-family: 'Nunito', sans-serif !important;
+    padding: 2px 5px !important;
+    margin-left: 8px !important;
+    width: 4.5rem !important;
+    cursor: text !important;
+}
+
+.flatpickr-calendar .flatpickr-months .flatpickr-month .flatpickr-current-month .numInputWrapper {
+    width: auto !important;
+}
+
+.flatpickr-calendar .flatpickr-months .flatpickr-month .flatpickr-current-month {
+    padding-top: 1px !important;
+}
