@@ -7,17 +7,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <main class="container-incio">
-        <div class ="card-boas-vindas">
-            <h1 class="logo-educaja">EducaJá</h1>
-
-            <p class="mensagem-boas-vindas">Bem-Vindo(a)! Escolha uma opção</p>
-
-            <div class="grupos-botoes">
-                <a href="login.php" class="btn btn-entrar">Entrar</a>
-                <a href="cadastro.php" class="btn btn-criar">Criar Conta</a>
-            </div>
-        </div>
-    </main>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">EducaJá</h1>
+        <nav> 
+            <ul class="cabecalho__nav-lista">
+                <li><a href="login.php" class="cabecalho__nav-link">Entrar</a></li>
+                <li><a href="cadastro.php" class="cabecalho__nav-link">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>
