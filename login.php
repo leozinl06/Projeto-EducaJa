@@ -7,30 +7,28 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <main class="container-inicio">
-        <div class="card-boas-vindas">
-            <h1 class="logo-educaja">Entrar</h1>
-            <p class="mensagem-boas-vindas">Digite seu e-mail e senha para continuar.</p>
+    <main class="layout-centralizado">
+        <div class="cartao">
+            <h1 class="cartao__titulo">Entrar</h1>
+            <p class="cartao__subtitulo">Digite seu e-mail e senha para continuar.</p>
 
-            <form action="process/validar_login.php" method="POST" class="form-acesso" novalidate>
-                
-                <div class="grupo-inputs-largos">
-                    <div class="campo-wrapper">
-                        <input type="email" id="email" name="email" placeholder="E-mail: exemplo@email.com" required>
-                        <span id="erro-email" class="mensagem-erro"></span>
+            <form action="process/validar_login.php" method="POST" novalidate>
+                <div class="formulario__grupo">
+                    <div class="formulario__campo">
+                        <input type="email" id="email" name="email" class="formulario__input" placeholder="E-mail: exemplo@email.com" required>
+                        <span id="erro-email" class="formulario__erro-msg"></span>
                     </div>
                     
-                    <div class="campo-wrapper">
-                        <input type="password" id="senha" name="senha" placeholder="Senha: Sua senha secreta" required>
-                        <span id="erro-senha" class="mensagem-erro"></span>
+                    <div class="formulario__campo">
+                        <input type="password" id="senha" name="senha" class="formulario__input" placeholder="Senha: Sua senha secreta" required>
+                        <span id="erro-senha" class="formulario__erro-msg"></span>
                     </div>
                 </div>
 
-                <div class="grupo-botoes-login">
-                    <button type="submit" class="btn-pequeno">Entrar</button>
-                    <a href="inicio.php" class="btn-voltar-simples">Voltar ao início</a>
+                <div class="acoes">
+                    <button type="submit" class="btn btn--pequeno">Entrar</button>
+                    <a href="inicio.html" class="link-simples">Voltar ao início</a>
                 </div>
-
             </form>
         </div>
     </main>
