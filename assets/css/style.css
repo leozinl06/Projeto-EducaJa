@@ -1,24 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 :root {
-    /* Fundos */
-    --cor-fundo: #EBF4FA;         
-    --cor-superficie: #FFFFFF;     
-    
-    /* Textos (Alto Contraste) */
-    --cor-texto: #2C3E50;          
-    --cor-texto-secundario: #64748B; 
-    
-    /* Ações e Estados */
-    --cor-primaria: #3182CE;       
-    --cor-primaria-hover: #2B6CB0; 
-    --cor-sucesso: #38A169;        
-    --cor-erro: #E53E3E;         
-    
-    /* Variáveis de Layout */
-    --sombra-padrao: 0 10px 25px rgba(44, 62, 80, 0.08); /* Sombra levemente azulada para harmonizar */
-    --borda-raio: 12px;
-    --borda-raio-lg: 24px;
+    --cor-fundo-primario: #EBF4FA;   
+    --cor-card-azul: #FFFFFF;       
+    --cor-texto: #2C3E50;            
+    --cor-btn-entrar: #3182CE;       
+    --cor-btn-criar: #38A169;        
+    --cor-erro-indicador: #E53E3E;  
 }
 
 * {
@@ -29,189 +17,236 @@
 }
 
 body {
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-fundo-primario);
     color: var(--cor-texto);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
-.layout-centralizado {
+.body {
+    background-color: var(--cor-fundo-primario);
+    color: var(--cor-texto);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
-    padding: 2rem;
+    min-height: 100vh;
 }
 
-.cabecalho {
+.header_inicio {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 2rem;
-    background-color: var(--cor-superficie);
+    padding: 2.5rem 0;
+    background-color: var(--cor-card-azul);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: var(--sombra-padrao);
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.05); 
 }
 
-.cabecalho__titulo {
-    margin-left: 1.5rem;
+.header_inicio h1 {
+    margin-left: 1.6rem;
 }
 
-.cabecalho__nav-lista {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    margin-right: 1.5rem;
-}
-
-.cabecalho__nav-link {
+.header_inicio nav a {
+    padding: .75em 1.15em;
+    border: none;
     text-decoration: none;
     color: var(--cor-texto);
-    font-weight: 700;
-    padding: 0.5rem 1rem;
-    border-radius: var(--borda-raio);
-    transition: background-color 0.3s ease;
 }
 
-.cabecalho__nav-link:hover {
-    background-color: var(--cor-fundo);
+.header_inicio nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    margin-right: 1.6rem;
 }
 
-.cartao {
-    background-color: var(--cor-superficie);
-    padding: 3rem;
-    border-radius: var(--borda-raio-lg);
-    text-align: center;
+.container-inicio {
     width: 100%;
-    max-width: 450px;
-    box-shadow: var(--sombra-padrao);
+    display: flex;
+    justify-content: center;
 }
 
-.cartao__titulo {
+.card-boas-vindas {
+    background-color: var(--cor-card-azul);
+    padding: 4rem 4rem;
+    border-radius: 24px;
+    text-align: center;
+    width: 90%;
+    max-width: 550px;
+    box-shadow: 0 8px 24px rgba(44, 62, 80, 0.08);
+}
+
+.logo-educaja {
     font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     color: var(--cor-texto);
 }
 
-.cartao__subtitulo {
+.mensagem-boas-vindas {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: var(--cor-texto-secundario);
-    line-height: 1.5;
+    color: #64748B;
+    line-height: 1.6;
 }
 
-.formulario__grupo {
+.grupo-botoes {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 2.3rem;
+}
+
+.btn {
+    display: block; 
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 12px;
+    background-color: transparent; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 1.5rem;
+}
+
+.btn:last-child {
+    margin-bottom: 0;
+}
+
+.btn-entrar, .btn-criar {
+    border: 2px solid var(--cor-texto);
+    color: var(--cor-texto);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.btn:focus {
+    outline: 3px solid var(--cor-btn-entrar);
+    outline-offset: 2px;
+}
+
+input, 
+.btn-pequeno {
+    border-radius: 12px;
+    border: 2px solid var(--cor-texto);
+    background-color: transparent;
+    font-size: 1.1rem;
+    color: var(--cor-texto);
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    text-align: center;
+}
+
+.grupo-inputs-largos {
+    width: 100%; /* Ajustado de 120% para não quebrar a tela no celular */
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 1.8rem;
+}
+
+.grupo-inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
     margin-bottom: 2rem;
 }
 
-.formulario__campo {
+input {
+    width: 100%;
+    padding: 1rem 1rem;
+    text-align: left;
+}
+
+input::placeholder {
+    font-size: 0.85rem; 
+    opacity: 0.8; 
+    letter-spacing: 0.5px;
+    color: #64748B;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--cor-btn-entrar);
+    box-shadow: 0 0 10px rgba(49, 130, 206, 0.2);
+}
+
+.grupo-botoes-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+}
+
+.btn-pequeno {
+    width: auto;
+    padding: 0.8rem 2.5rem; 
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+.btn-pequeno:hover {
+    background-color: var(--cor-texto);
+    color: var(--cor-card-azul);
+    transform: translateY(-2px);
+}
+
+.btn-voltar-simples {
+    display: block;
+    margin-top: 1.2rem;
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.btn-voltar-simples:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.campo-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
 }
 
-.formulario__input {
+.mensagem-erro {
+    display: none;
+    color: var(--cor-erro-indicador); 
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+    text-align: left;
     width: 100%;
-    padding: 1rem;
-    border-radius: var(--borda-raio);
-    border: 2px solid var(--cor-texto);
-    background-color: transparent;
-    font-size: 1rem;
-    color: var(--cor-texto);
-    transition: all 0.3s ease;
+    animation: fadeInError 0.3s ease-out;
 }
 
-.formulario__input::placeholder {
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
-}
-
-.formulario__input:focus {
-    outline: none;
-    border-color: var(--cor-primaria);
-    box-shadow: 0 0 10px rgba(86, 180, 233, 0.2);
-}
-
-.formulario__input:-webkit-autofill {
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
     -webkit-text-fill-color: var(--cor-texto) !important;
 }
 
-.formulario__input--erro {
-    border-color: var(--cor-erro) !important;
-}
-
-.formulario__erro-msg {
-    display: none;
-    color: var(--cor-erro);
-    font-size: 0.85rem;
-    font-weight: 700;
-    margin-top: 0.4rem;
-    margin-left: 0.5rem;
-    text-align: left;
-    animation: fadeIn 0.3s ease-out;
-}
-
-.acoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-}
-
-.btn {
-    border-radius: var(--borda-raio);
-    border: 2px solid var(--cor-texto);
-    background-color: transparent;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--cor-texto);
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    padding: 0.8rem 2.5rem;
-    transition: all 0.3s ease;
-    width: 100%;
-}
-
-.btn:hover {
-    background-color: var(--cor-texto);
-    color: var(--cor-superficie);
-    transform: translateY(-2px);
-}
-
-.btn:focus {
-    outline: 3px solid var(--cor-primaria);
-    outline-offset: 2px;
-}
-
-.btn--pequeno {
-    width: auto;
-}
-
-.link-simples {
-    text-decoration: none;
-    color: var(--cor-texto);
-    font-size: 0.95rem;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-}
-
-.link-simples:hover {
-    text-decoration: underline;
-    opacity: 1;
-}
-
-@keyframes fadeIn {
+@keyframes fadeInError {
     from { opacity: 0; transform: translateY(-3px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+input.campo-erro {
+    border-color: var(--cor-erro-indicador) !important;
+    box-shadow: inset 0 0 5px rgba(229, 62, 62, 0.1);
 }

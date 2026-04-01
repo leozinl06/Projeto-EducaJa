@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <h1 class="cabecalho__titulo">EducaJá</h1>
+    <header class="header_inicio">
+        <h1>EducaJá</h1>
         <nav> 
-            <ul class="cabecalho__nav-lista">
-                <li><a href="login.php" class="cabecalho__nav-link">Entrar</a></li>
-                <li><a href="cadastro.php" class="cabecalho__nav-link">Cadastro</a></li>
+            <ul>
+                <li><a href="#">Entrar</a></li>
+                <li><a href="#">Cadastro</a></li>
             </ul>
         </nav>
     </header>

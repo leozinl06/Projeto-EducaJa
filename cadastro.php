@@ -8,39 +8,41 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="assets/css/calendario.css">
 </head>
-<body>
-    <main class="layout-centralizado">
-        <div class="cartao">
-            <h1 class="cartao__titulo">Cadastro</h1>
-            <p class="cartao__subtitulo">Preencha os dados abaixo para criar sua conta.</p>
+<body class="body">
+    <main class="container-inicio">
+        <div class="card-boas-vindas">
+            <h1 class="logo-educaja">Cadastro</h1>
+            <p class="mensagem-boas-vindas">Preencha os dados abaixo para criar sua conta.</p>
 
-            <form action="process/validar_cadastro.php" method="POST" id="form-cadastro" novalidate>
-                <div class="formulario__grupo">
-                    <div class="formulario__campo">
-                        <input type="text" id="nome" name="nome" class="formulario__input" placeholder="Nome completo" required>
-                        <span id="erro-nome" class="formulario__erro-msg"></span>
+            <form action="process/validar_cadastro.php" method="POST" class="form-acesso" id="form-cadastro" novalidate>
+                <div class="grupo-inputs-largos">
+                    
+                    <div class="campo-wrapper">
+                        <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+                        <span id="erro-nome" class="mensagem-erro"></span>
                     </div>
 
-                    <div class="formulario__campo">
-                        <input type="text" id="nascimento" name="nascimento" class="formulario__input" placeholder="Data de nascimento" required>
-                        <span id="erro-nascimento" class="formulario__erro-msg"></span>
+                    <div class="campo-wrapper">
+                        <input type="text" id="nascimento" name="nascimento" placeholder="Data de nascimento" required>
+                        <span id="erro-nascimento" class="mensagem-erro"></span>
                     </div>
 
-                    <div class="formulario__campo">
-                        <input type="email" id="email" name="email" class="formulario__input" placeholder="E-mail: exemplo@email.com" required>
-                        <span id="erro-email" class="formulario__erro-msg"></span>
+                    <div class="campo-wrapper">
+                        <input type="email" id="email" name="email" placeholder="E-mail: exemplo@email.com" required>
+                        <span id="erro-email" class="mensagem-erro"></span>
                     </div>
                     
-                    <div class="formulario__campo">
-                        <input type="password" id="senha" name="senha" class="formulario__input" placeholder="Senha: Crie uma senha secreta" required>
-                        <span id="erro-senha" class="formulario__erro-msg"></span>
+                    <div class="campo-wrapper">
+                        <input type="password" id="senha" name="senha" placeholder="Senha: Crie uma senha secreta" required>
+                        <span id="erro-senha" class="mensagem-erro"></span>
                     </div>
+
                 </div>
 
-                <div class="acoes">
-                    <button type="submit" class="btn btn--pequeno">Criar Conta</button>
-                    <a href="login.php" class="link-simples">Já tenho uma conta</a>
-                    <a href="inicio.html" class="link-simples">Voltar ao início</a>
+                <div class="grupo-botoes-login">
+                    <button type="submit" class="btn-pequeno">Criar Conta</button>
+                    <a href="login.php" class="btn-voltar-simples">Já tenho uma conta</a>
+                    <a href="inicio.php" class="btn-voltar-simples">Voltar ao início</a>
                 </div>
             </form>
         </div>
