@@ -11,8 +11,8 @@
         <h1>EducaJá</h1>
         <nav> 
             <ul>
-                <li><a href="#">Entrar</a></li>
-                <li><a href="#">Cadastro</a></li>
+                <li><a href="login.php">Entrar</a></li>
+                <li><a href="cadastro.php">Cadastro</a></li>
             </ul>
         </nav>
     </header>

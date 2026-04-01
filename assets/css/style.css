@@ -26,8 +26,9 @@ body {
     color: var(--cor-texto);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-height: 100vh;
+    padding-top: 6rem;
 }
 
 .header_inicio {
@@ -39,8 +40,10 @@ body {
     background-color: var(--cor-card-azul);
     position: sticky;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
-    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.05); 
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.05);
 }
 
 .header_inicio h1 {
