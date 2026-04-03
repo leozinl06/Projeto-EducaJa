@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 :root {
-    --cor-fundo-primario: #EBF4FA;   
-    --cor-card-azul: #FFFFFF;       
+    --cor-fundo-primario: #5086c1;   
+    --cor-card-azul: #7FB3D5;       
     --cor-texto: #2C3E50;            
     --cor-btn-entrar: #3182CE;       
     --cor-btn-criar: #38A169;        
-    --cor-erro-indicador: #E53E3E;  
+    --cor-erro-indicador: #895129;  
 }
 
 * {
