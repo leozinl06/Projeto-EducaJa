@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="grupo-botoes-login">
-                    <button type="submit" class="btn-pequeno">Criar Conta</button>
+                    <a href="personalizacao_cor.php" type="submit" class="btn-pequeno">Criar Conta</a>
                     <a href="login.php" class="btn-voltar-simples">Já tenho uma conta</a>
                     <a href="inicio.php" class="btn-voltar-simples">Voltar ao início</a>
                 </div>
