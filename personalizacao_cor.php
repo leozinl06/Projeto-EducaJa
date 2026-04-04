@@ -56,7 +56,6 @@
 
         <div class="grupo-botoes-personalizacao">
             <a href="personalizacao_fonte.php" class="btn-pequeno">Salvar e Continuar</a>
-            <a href="cadastro.php" class="btn-voltar-simples">Voltar</a>
         </div>
     </div>
     </main>
