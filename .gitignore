@@ -1,0 +1,5 @@
+.env
+.vscode/
+vendor/
+.DB_Store
+*.swp

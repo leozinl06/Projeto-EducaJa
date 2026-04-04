@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="grupo-botoes-login">
-                    <button type="submit" class="btn-pequeno">Entrar</button>
+                    <a href="personalizacao_cor.php" type="submit" class="btn-pequeno">Entrar</a>
                     <a href="inicio.php" class="btn-voltar-simples">Voltar ao início</a>
                 </div>
 

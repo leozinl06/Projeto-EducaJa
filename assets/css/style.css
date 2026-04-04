@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 :root {
-    --cor-fundo-primario: #EBF4FA;   
-    --cor-card-azul: #FFFFFF;       
+    --cor-fundo-primario: #5086c1;   
+    --cor-card-azul: #7FB3D5;       
     --cor-texto: #2C3E50;            
     --cor-btn-entrar: #3182CE;       
     --cor-btn-criar: #38A169;        
-    --cor-erro-indicador: #E53E3E;  
+    --cor-erro-indicador: #895129;  
 }
 
 * {
@@ -252,4 +252,92 @@ input:-webkit-autofill:active {
 input.campo-erro {
     border-color: var(--cor-erro-indicador) !important;
     box-shadow: inset 0 0 5px rgba(229, 62, 62, 0.1);
+}
+
+.seletor-cores-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px !important;
+    margin: 10px 0;
+}
+
+.secao-personalizacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px !important;
+}
+
+.grid-presets {
+    display: flex !important;
+    justify-content: center;
+    gap: 12px;
+    margin: 15px 0;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.btn-preset-cor {
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 10px;
+    border: 2px solid var(--cor-texto);
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: block !important;
+}
+
+.btn-preset-cor:hover {
+    transform: scale(1.1);
+}
+
+.controle-cor-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 90%;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.controle-cor-custom input[type="color"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50px;
+    height: 40px;
+    border: 2px solid var(--cor-texto);
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.controle-cor-custom input[type="color"]::-webkit-color-swatch {
+    border-radius: 6px;
+    border: none;
+}
+
+.texto-ajuda-custom {
+    margin-top: 5px !important;
+    margin-bottom: 2px;
+}
+
+.divisor-personalizacao {
+    width: 80%;
+    border: 0;
+    border-top: 1px solid var(--cor-texto);
+    opacity: 0.1;
+    margin: 15px 0;
+}
+
+.grupo-botoes-personalizacao {
+    margin-top: 25px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px !important;
 }
